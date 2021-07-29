@@ -34,7 +34,6 @@ const consumptionPerWeek = 1200;
 const weeksAmount = 8;
 
 function packPaper() {
-    debugger;
     let perWeek = (weeksAmount * consumptionPerWeek) / sheetsInReamPaper;
     if (perWeek % 1 == 0) {
         return perWeek;
@@ -44,3 +43,15 @@ function packPaper() {
 }
 
 console.log(packPaper());
+
+// Задача 5
+
+function pyramid(n) {
+    for(let i = 1; i <= n; i++){
+      let dash = '-'.repeat(n - i);
+      let sharp = '#'.repeat(i * 2 - 1);
+
+      console.log(dash + sharp + dash);
+    }
+}
+pyramid(8);
