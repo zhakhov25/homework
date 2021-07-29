@@ -11,7 +11,7 @@ const amountFizzBuzz = num => {
             console.log('Fizz');
         }
     }
-  }
+}
   
 amountFizzBuzz(10);
 
@@ -19,7 +19,6 @@ amountFizzBuzz(10);
 
 const factorNumber = num => {
     let sum = 1;
-    debugger;
     for(let i = 1; i <= num; i++) {
         sum *= i;
     }
@@ -27,3 +26,21 @@ const factorNumber = num => {
 }
 
 console.log(factorNumber(10));
+
+// Задача 3
+
+const sheetsInReamPaper = 500;
+const consumptionPerWeek = 1200;
+const weeksAmount = 8;
+
+function packPaper() {
+    debugger;
+    let perWeek = (weeksAmount * consumptionPerWeek) / sheetsInReamPaper;
+    if (perWeek % 1 == 0) {
+        return perWeek;
+    } else {
+        return perWeek - (perWeek % 1) + 1;
+    }
+}
+
+console.log(packPaper());
